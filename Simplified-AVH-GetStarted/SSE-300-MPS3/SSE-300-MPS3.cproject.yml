@@ -1,0 +1,17 @@
+# A project translates into one executable or library.
+project:
+  groups:
+    - group: Source Files
+      files:
+        - file: ./main.c
+        - file: ./retarget_stdio.c
+
+  # List components to use for your application.
+  # A software component is a re-usable unit that may be configurable.
+  components:
+    - component: ARM::CMSIS:CORE
+    - component: ARM::CMSIS Driver:USART
+    - component: Arm-Packs::Test:Unity
+    - component: ARM::Native Driver:UART
+    - component: Device:Definition
+    - component: Device:Startup

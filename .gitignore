@@ -1,0 +1,8 @@
+# CMSIS Build Folders
+RTE/
+out/
+tmp/
+
+# Intermediate build files
+*.cprj
+.clangd
